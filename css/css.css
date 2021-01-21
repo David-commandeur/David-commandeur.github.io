@@ -478,7 +478,8 @@ hr {
     width:auto;
     padding:10px 20px;
     margin-bottom: 5px;
-    font-size:23px;
+    /*font-size:23px;*/
+    font-size:100%;
     z-index:100000;
   }
 
@@ -496,6 +497,7 @@ hr {
   .menu {
     padding:5px 5px;
     position:fixed;
+    width:60%;
     top:0;
     right:0;
     left:0;
@@ -510,7 +512,7 @@ hr {
     top:78px;
     right:0;
     left:0;
-    width:300px;
+    width:60%;
     padding:10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -526,7 +528,7 @@ hr {
     top:78px;
     right:0;
     left:0;
-    width:300px;
+    width:60%;
     padding:10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -539,7 +541,7 @@ hr {
 
   .close{
     top: 94px;
-    left: 240px;
+    left: 45%;
   }
   .count {
     font-family:'Permanent Marker';
