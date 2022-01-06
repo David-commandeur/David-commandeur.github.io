@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>TP Drag'n'explore</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <div class='pop'>Félicitation !!<br><br>
+    <div class='pop-sous'>vous avez trouver toute les maladies<br><br>
+      <a class='b' onclick='document.location.reload();'> Rejouer</a>
+    </div>
+  </div>
+
+  <div class="map">
+    <div class="inner">
+      
+    </div>
+  </div>
+  <div class="loading">
+    <div class="contenu">
+      <img src="images/Bactogif2.gif" height="180px"></img><br><br>
+      <span id="chargement" style="font-size:20px;"> ... Chargement ...</span><br>
+    </div>
+  </div>
+
+  <div class="count">
+    <span id="count_found">0</span> / 10
+  </div>
+  
+  <div class="menu">
+    <div class="menu-info">VIRUS ET BACTERIE <br><div class="mini">(cliquer sur les ??? pour plus d'info)</span> </div>
+    <div class="menu-content">
+      <br><div class="menu-item" data-hotspot="hotspot1">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(12,187,129);">Cholera</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot2">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(255,0,0);">Coronavirus</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot3">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(245,185,63);">Hepatite A</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot4">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(255,210,95);">Paludisme</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot5">
+        <div class="item-not-found">??? </div>
+        <div class="item-found"><span style="color:rgb(96,185,12);">Papillomavirus</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot6">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(0,86,199);">Peste</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot7">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(7,199,195);">Pneumonie</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot8">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(212,28,197);">Sida</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot9">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(0,115,46);">Tuberculose</span><br>trouver !</div>
+      </div>
+      <div class="menu-item" data-hotspot="hotspot10">
+        <div class="item-not-found">???</div>
+        <div class="item-found"><span style="color:rgb(90,35,158);">Virus Zika</span><br>trouver !</div>
+      </div>
+
+      <div class="element" id="element1" data-hotspot="hotspot1">
+      </div>
+      <div class="element" id="element2" data-hotspot="hotspot2">
+      </div>
+      <div class="element" id="element3" data-hotspot="hotspot3">
+      </div>
+      <div class="element" id="element4" data-hotspot="hotspot4">
+      </div>
+      <div class="element" id="element5" data-hotspot="hotspot5">
+      </div>
+      <div class="element" id="element6" data-hotspot="hotspot6">
+      </div>
+      <div class="element" id="element7" data-hotspot="hotspot7">
+      </div>
+      <div class="element" id="element8" data-hotspot="hotspot8">
+      </div>
+      <div class="element" id="element9" data-hotspot="hotspot9">
+      </div>
+      <div class="element" id="element10" data-hotspot="hotspot10">
+      </div>
+
+    </div>
+  </div>
+
+  <div class="fiche" id="fiche1" data-hotspot="hotspot1">
+    Bactérie trouvé<hr><br>
+    Le Cholera !<br><br>
+    <img src="images/Viruspetit/Cholerapetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1854</span><br>Par:<span style="color:rgb(255,0,0);">  Filippo Pacini</span><br><br>Type: <span style="color:rgb(255,0,0);">Bactérie</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  100 000</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche2" data-hotspot="hotspot2">
+    Virus trouvé<hr><br>
+    La Coronavirus ! <br><br>
+    <img src="images/Viruspetit/Coronaviruspetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1930</span><br>Par:<span style="color:rgb(255,0,0);">  Inconnu</span><br><br>Type: <span style="color:rgb(255,0,0);">Virus</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  Non Precis (pandémie)</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche3" data-hotspot="hotspot3">
+    Virus trouvé<hr><br>
+    L'Hepatite A ! <br><br>
+    <img src="images/Viruspetit/HepatiteApetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1843</span><br>Par:<span style="color:rgb(255,0,0);">  Karel Rokitansky</span><br><br>Type: <span style="color:rgb(255,0,0);">Virus</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  1 500</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche4" data-hotspot="hotspot4">
+    Parasite trouvé<hr><br>
+    Le Paludisme ! <br><br>
+    <img src="images/Viruspetit/Paludismepetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1880</span><br>Par:<span style="color:rgb(255,0,0);">  Alphonse Laveran</span><br><br>Type: <span style="color:rgb(255,0,0);">Parasite</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  435 000</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche5" data-hotspot="hotspot5">
+    Virus trouvé<hr><br>
+    Le Papillomavirus ! <br><br>
+    <img src="images/Viruspetit/Papillomaviruspetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1925</span><br>Par:<span style="color:rgb(255,0,0);">   Georgios Papanicolaou</span><br><br>Type: <span style="color:rgb(255,0,0);">Virus</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  600 000</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche6" data-hotspot="hotspot6">
+    Bactérie trouvé<hr><br>
+    La Peste ! <br><br>
+    <img src="images/Viruspetit/Pestepetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1894</span><br>Par:<span style="color:rgb(255,0,0);">   Alexandre Yersin</span><br><br>Type: <span style="color:rgb(255,0,0);">Bactérie</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  500</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche7" data-hotspot="hotspot7">
+    Bactérie trouvé<hr><br>
+    La Pneumonie ! <br><br>
+    <img src="images/Viruspetit/Pneumoniepetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1881</span><br>Par:<span style="color:rgb(255,0,0);">  Louis Paster & George Sternberg</span><br><br>Type: <span style="color:rgb(255,0,0);">Bactérie</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  16 000</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche8" data-hotspot="hotspot8">
+    Virus trouvé<hr><br>
+    Le Sida ! <br><br>
+    <img src="images/Viruspetit/Sidapetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1983</span><br>Par:<span style="color:rgb(255,0,0);">  Françoise Barré-Sinoussi & Jean-Claude Chermann</span><br><br>Type: <span style="color:rgb(255,0,0);">Virus</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  770 000</span><br><br>
+  </div>
+  <div class="fiche" id="fiche9" data-hotspot="hotspot9">
+    Bactérie trouvé<hr><br>
+    La Tuberculose ! <br><br>
+    <img src="images/Viruspetit/Tuberculosepetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1882</span><br>Par:<span style="color:rgb(255,0,0);">  Robert Koch</span><br><br>Type: <span style="color:rgb(255,0,0);">Bactérie</span><br><br>Morts par an:<span style="color:rgb(255,0,0);"> 1 500 000</span><br> <br>
+  </div>
+  <div class="fiche" id="fiche10" data-hotspot="hotspot10">
+    Virus trouvé<hr><br>
+    Le virus Zika ! <br><br>
+    <img src="images/Viruspetit/Zikapetit.png"><hr>
+    <br>Découverte:<span style="color:rgb(255,0,0);">  1952</span><br>Par:<span style="color:rgb(255,0,0);">  Inconnu</span><br><br>Type: <span style="color:rgb(255,0,0);">Virus</span><br><br>Morts par an:<span style="color:rgb(255,0,0);">  15 000</span><br> <br>
+  </div>
+
+  <div class="img" id="img1" data-hotspot="hotspot1">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Cholerablack.png"><br><br><img src="images/Blackversion/couleurs1.png">
+  </div>
+  <div class="img" id="img2" data-hotspot="hotspot2">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Coronavirusblack.png"><br><br><img src="images/Blackversion/couleurs2.png">
+  </div>
+  <div class="img" id="img3" data-hotspot="hotspot3">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/HepatiteAblack.png"><br><br><img src="images/Blackversion/couleurs3.png">
+  </div>
+  <div class="img" id="img4" data-hotspot="hotspot4">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Paludismeblack.png"><br><br><img src="images/Blackversion/couleurs4.png">
+  </div>
+  <div class="img" id="img5" data-hotspot="hotspot5">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Papillomavirusblack.png"><br><br><img src="images/Blackversion/couleurs5.png">
+  </div>
+  <div class="img" id="img6" data-hotspot="hotspot6">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Pesteblack.png"><br><br><img src="images/Blackversion/couleurs6.png">
+  </div>
+  <div class="img" id="img7" data-hotspot="hotspot7">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Pneumonieblack.png"><br><br><img src="images/Blackversion/couleurs7.png">
+  </div>
+  <div class="img" id="img8" data-hotspot="hotspot8">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Sidablack.png"><br><br><img src="images/Blackversion/couleurs8.png">
+  </div>
+  <div class="img" id="img9" data-hotspot="hotspot9">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Tuberculoseblack.png"><br><br><img src="images/Blackversion/couleurs9.png">
+  </div>
+  <div class="img" id="img10" data-hotspot="hotspot10">
+    Maladie rechercher<hr><br>
+    <img src="images/Blackversion/Zikablack.png"><br><br><img src="images/Blackversion/couleurs10.png">
+  </div>
+  </div>
+
+<div class="close"></div>
+<div class="fond"></div>
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/scrollbooster.min.js"></script>
+
+  <script type="text/javascript">
+    let elementsClasses = [
+      'hotspot1',
+      'hotspot2',
+      'hotspot3',
+      'hotspot4',
+      'hotspot5',
+      'hotspot6',
+      'hotspot7',
+      'hotspot8',
+      'hotspot9',
+      'hotspot10',
+    ];
+
+    // Nombre de hotspots à créer :
+    let elementsCount = 10;
+
+    $(function() {
+
+      $(document).ready(function(){
+          setTimeout(function(){
+              $(".loading").fadeOut();
+          },2000);
+        });
+
+      $('.hotspot').on('click', function(){
+        let id = $(this).attr('id');
+
+        // Décommenter ci-dessous pour n'afficher qu'un seul élément à la fois
+        // $('.element').removeClass('show');
+
+        // Décommenter ci-dessous pour désactiver ce hotspot une fois cliqué
+        $(this).hide();
+
+        $('.element[data-hotspot="'+id+'"]').addClass('show');
+      });
+
+      let map = $('.inner');
+
+      for (let i = 1; i <= elementsCount; i++) {
+
+        // On calcule une position X aléatoire :
+        // on prend une valeur aléatoire entre 0 et la largeur de la carte
+        let x = Math.random() * (map.width()-400);
+
+        // On calcule une position Y aléatoire :
+        // on prend une valeur aléatoire entre 0 et la hauteur de la carte
+        let y = Math.random() * (map.height()-150);
+
+        // On pioche une class à appliquer à notre hotspot :
+        // on prend notre tableau des class (elementsClasses)
+        // et on pioche une ligne aléatoire entre la ligne 0 et la dernière ligne du tableau
+        let id = elementsClasses[i-1];
+
+        // Puis on crée notre élément HTML grâce à jQuery :
+        let hotspot = $('<div class="hotspot" id="'+id+'"></div>');
+
+        // On applique la position à l'élément HTML
+        // avec la fonction jQuery .css() :
+        hotspot.css({
+          top: y+'px',
+          left: x+'px'
+        })
+        hotspot.one('click', function(){
+          count_found++;
+          $(this).addClass('found');
+
+          let id = $(this).attr('id');
+          $('.menu-item[data-hotspot="'+id+'"]').addClass('found');
+
+          $('#count_found').text(count_found);
+
+          if(count_found == 10){
+            $('.pop').show().css('display','flex');
+            $('.fond').show().css('display');
+          }
+       });
+
+       
+        // Enfin, on ajoute notre élément HTML
+        // dans la page, en tant qu'enfant de la carte (.inner)
+        hotspot.appendTo(map);
+
+      }
+      function closeverything (){
+        $('.fiche').removeClass('show');
+        $('.img').removeClass('show');
+      }
+
+       let count_found = 0;
+
+     $(".menu-info").on("click",function(){
+          $(".menu-content").slideToggle()
+          closeverything()
+          $('.close').removeClass('show');
+        })
+
+
+
+     $('.hotspot').on('click', function(){
+                  let id = $(this).attr('id');
+                  closeverything()
+                  $('.close').addClass('show');
+                  $('.fiche[data-hotspot="'+id+'"]').addClass('show');
+                });
+
+                  $('.close').on('click', function(){
+                  closeverything()
+                  $('.close').removeClass('show');
+                });
+
+      $(document).on('click','.menu-item.found',function(){
+                  let id = $(this).data('hotspot');
+                  closeverything()
+                  $('.close').addClass('show');
+                  $('.fiche[data-hotspot="'+id+'"]').addClass('show');
+      });
+
+      $(document).on('click','.menu-item:not(.found)',function(){
+                  let id = $(this).data('hotspot');
+                  closeverything()
+                  $('.close').addClass('show');
+                  $('.img[data-hotspot="'+id+'"]').addClass('show');
+      });
+        
+      var scrollElScroll = document.querySelector(".map .inner");
+      var scr = new ScrollBooster({
+        viewport: document.querySelector(".map"),
+        emulateScroll: true,
+        bounce: false, // Pour éviter l'effet élastique
+        friction: 0.2, // Pour régler la friction du déplacement
+        onUpdate: function(data) {
+          scrollElScroll.style.transform =
+            "translate(" + -data.position.x + "px, " + -data.position.y + "px)";
+        },
+      });
+
+      scr.setPosition({
+        x: 3000,
+        y: 1435
+      });
+
+    });
+  </script>
+</body>
+</html>
