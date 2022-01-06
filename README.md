@@ -1,8 +1,13 @@
 # David-commandeur.github.io
-<hr>
-My work here !<br>
-It's ain't much, but it's honest work :)
-<hr>
+
+
+```scss
+/*--------------------------------------*\
+ My work here !
+ It's ain't much, but it's honest work :)
+\*--------------------------------------*/
+```
+
   <ul>
     <li><a href="https://david-commandeur.github.io/Findthedisease/">Find the disease</a></li>
     <li><a href="https://david-commandeur.github.io/Memoire/">Memoire-DNMADe 3 num</a></li>
