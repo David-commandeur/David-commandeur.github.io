@@ -1,5 +1,7 @@
 <div class="footnote">
 
+border-left: 3px solid currentcolor; padding-left: 14px; padding-right: 14px; width: 100%;
+
 
 *::-moz-selection {
 	background: rgba(255, 69, 0, 0.1) scroll 0 0;
@@ -62,6 +64,14 @@ a {
 
 a:hover {
     opacity: 0.75;
+}
+
+.these {
+    font-weight: 700;
+    font-size: 30px ;
+    border-left: 3px solid;
+    padding-left: 14px; 
+    padding-right: 14px;
 }
 
 /*
