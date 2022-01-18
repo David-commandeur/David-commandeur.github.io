@@ -8,10 +8,15 @@ body {
 .remerciments {
     Position: absolute;
     width: 60%;
-    top: 690px;
+    bottom: 120px;
     left: 5%;
     width: 480px;
     font-weight: 200;
+}
+
+.Sommaire {
+    display:none;
+
 }
 
 h1 {
@@ -61,7 +66,7 @@ a:hover{
 }
 
 .color {
-    background-image: linear-gradient(to bottom right, rgba(255, 48, 82, 1), rgba(253, 106, 60, 1));
+    background-image: linear-gradient(to bottom right, rgba(255, 48, 82, 1), rgb(219, 108, 34));
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
@@ -125,6 +130,13 @@ section p {
     
 }
 
+.Section-sommaire2 {
+    display:none;
+    padding-top:40px;
+    padding-bottom:40px;
+    
+}
+
 .Contenu {
     padding-top:40px;
     position: absolute;
@@ -137,6 +149,10 @@ section p {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     transition: 0.3s;
+}
+
+.Contenu2 {
+
 }
 
 .Section-Introduction {
@@ -251,5 +267,22 @@ img.color:hover {
     .Head-image {
         width:80%;
         top: 200px;
+    }
+    .Section-sommaire2 {
+        display:block;
+        
+    }
+
+    .Sommaire {
+        display:block;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        background: linear-gradient(to bottom right, rgba(255, 48, 82, 1), rgb(219, 108, 34));
+        border-radius: 20px;
+        padding:20px;
+        font-size:20px;
+        font-weight: Bold;
+    
     }
 }
