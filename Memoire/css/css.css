@@ -345,7 +345,8 @@ section p {
     }
     
     .Img-tiers{
-        max-width: 600px;
+        margin:0;
+        max-width:100%;
     }
 }
 
@@ -410,7 +411,8 @@ section p {
     }
     
     .Img-tiers{
-        max-width: 600px;
+        margin:0;
+        max-width:100%;
     }
 }
 
@@ -475,6 +477,7 @@ section p {
     }
     
     .Img-tiers{
-        max-width: 600px;
+        margin:0;
+        max-width:100%;
     }
 }
