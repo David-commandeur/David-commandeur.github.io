@@ -513,6 +513,7 @@ section p {
     h3 {
         max-width: 90%;
         font-size:30px;
+        padding-bottom:20px;
     }
 
     h4 {
@@ -616,5 +617,16 @@ section p {
     }
     .Img-petit {
         font-size: 14px;
+    }
+
+    .Section-Introduction {
+        padding-top:40px;
+        padding-bottom:0px;
+    }
+    
+    .Section-1 {
+        background: #1e2859;
+        padding-top:40px;
+        padding-bottom:0px;
     }
 }
