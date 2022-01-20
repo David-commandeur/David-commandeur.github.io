@@ -620,13 +620,13 @@ section p {
     }
 
     .Section-Introduction {
-        padding-top:40px;
+        padding-top:20px;
         padding-bottom:0px;
     }
     
     .Section-1 {
         background: #1e2859;
-        padding-top:40px;
+        padding-top:20px;
         padding-bottom:0px;
     }
 }
