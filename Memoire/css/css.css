@@ -250,6 +250,12 @@ section p {
     border-radius:20px;
 }
 
+.Img-petit {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
 
 @media screen and (max-width: 1650px) and (min-width: 1350px){
 
@@ -348,6 +354,9 @@ section p {
         margin:0;
         max-width:100%;
     }
+
+    
+    
 }
 
 @media screen and (max-width: 1020px) and (min-width: 720px){
@@ -414,6 +423,8 @@ section p {
         margin:0;
         max-width:100%;
     }
+
+    
 }
 
 @media screen and (max-width: 720px) and (min-width: 500px){
@@ -494,14 +505,20 @@ section p {
 
     h3 {
         max-width: 90%;
+        font-size:30px;
     }
 
     h4 {
         max-width: 90%;
+        font-size:20px;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 38px;
+    }
+
+    .Nom {
+        font-size:20px;
     }
 
     .Contenu{
@@ -549,5 +566,44 @@ section p {
     .Img-tiers{
         margin:0;
         max-width:100%;
+    }
+    
+    .remerciments {
+        width: 90%;
+        
+    }
+
+    
+    .Contenue-sommaire {
+        display:block;
+        right: 20px;
+        border-radius: 8px;
+        padding:10px;
+    }
+
+    .Section-sommaire3 {
+        top:20px;
+        right:20px;
+        
+    }
+
+    .Img-grande {
+        display:block;
+    }
+
+    .Img-grande div{
+        width:100%;
+    }
+
+    .page-content {
+        font-size: 14px;
+    }
+
+    .Img-tiers{
+        display:block;
+
+    }
+    .Img-petit {
+        font-size: 14px;
     }
 }
