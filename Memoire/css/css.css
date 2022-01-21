@@ -68,13 +68,8 @@ a:hover{
 }
 
 .color {
-    background-image: linear-gradient(to bottom right, rgba(255, 48, 82, 1), rgb(219, 108, 34));
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+    color: #DA1212;
+
 }
 
 
@@ -260,6 +255,9 @@ section p {
     font-weight: 200;
 }
 
+.lettre {
+    font-size:85px;
+}
 
 
 @media screen and (max-width: 1650px) and (min-width: 1350px){
@@ -344,7 +342,7 @@ section p {
         display:block;
         position:absolute;
         width: 700px;
-        top: -16px;
+        top: 4px;
         right: 0;
         z-index:-1;
     }
@@ -429,6 +427,10 @@ section p {
     .Img-tiers{
         margin:0;
         max-width:100%;
+    }
+
+    .remerciments {
+        bottom:50px;
     }
 
     
@@ -628,5 +630,11 @@ section p {
         background: #1e2859;
         padding-top:20px;
         padding-bottom:0px;
+    }
+    .lettre {
+        font-size:40px;
+    }
+    .Nom {
+        font-size:16px;
     }
 }
